@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: wordpress
+  namespace: wordpress
+spec:
+  host: pacmanhosthere
+  port:
+    targetPort: 80
+  to:
+    kind: Service
+    name: wordpress
+    weight: 100
