@@ -4,7 +4,7 @@ metadata:
   name: guestbook
   namespace: guestbook
 spec:
-  host: guestbook.yzw-test-5ecb78232f6f5cc392e551f4ec27be9c-0000.us-south.containers.appdomain.cloud
+  host: guestbook.apps.hivemind-dev.dev02.red-chesterfield.com
   port:
     targetPort: 80
   to:
