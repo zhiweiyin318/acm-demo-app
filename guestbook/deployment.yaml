@@ -8,7 +8,7 @@ spec:
     matchLabels:
       app: guestbook
       tier: frontend
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
@@ -22,6 +22,9 @@ spec:
           requests:
             cpu: 100m
             memory: 100Mi
+          limits:
+            cpu: 100m
+            memory: 100Mi   
         env:
         - name: GET_HOSTS_FROM
           value: env
